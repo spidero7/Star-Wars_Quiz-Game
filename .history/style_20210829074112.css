@@ -1,0 +1,31 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+:root {
+    --hue-normal: 222;
+    --hue-correct: 120;
+    --hue-wrong: 0;
+}
+
+body {
+    --hue: var(--hue-normal);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 50%, 30%);
+}
+
+.container {
+    width: 500px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}

@@ -71,14 +71,7 @@ body.wrong {
 }
 
 #control-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#start-btn, #next-btn {
-    padding: 10px 20px;
-    font-size: 1.5rem;
+    display: ;
 }
 
 .hide {

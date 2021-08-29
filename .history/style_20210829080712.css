@@ -1,7 +1,6 @@
 *, *::after, *::before {
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-weight: bold;
 }
 
 :root {
@@ -52,35 +51,5 @@ body.wrong {
     border: 1px solid hsl(var(--hue), 100%, 20%);
     color: white;
     border-radius: 5px;
-    padding: 5px 10px;
-    outline: none;
-}
-
-.btn:hover {
-    border-color: black;
-    cursor: pointer;
-}
-
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: black;
-}
-
-.btn.wrong {
-    --hue: var(--hue-wrong);
-}
-
-#control-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#start-btn, #next-btn {
-    padding: 10px 20px;
-    font-size: 1.5rem;
-}
-
-.hide {
-    display: none;
+    padding: ;
 }

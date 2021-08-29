@@ -57,8 +57,7 @@ body.wrong {
 }
 
 .btn:hover {
-    border-color: black;
-    cursor: pointer;
+    
 }
 
 .btn.correct {
@@ -68,19 +67,4 @@ body.wrong {
 
 .btn.wrong {
     --hue: var(--hue-wrong);
-}
-
-#control-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#start-btn, #next-btn {
-    padding: 10px 20px;
-    font-size: 1.5rem;
-}
-
-.hide {
-    display: none;
 }
