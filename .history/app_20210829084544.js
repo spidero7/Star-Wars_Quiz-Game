@@ -1,23 +1,17 @@
 const startButton = document.querySelector('#start-btn')
 const questionContainer = document.querySelector('#question-container')
 
-let shuffledQuestions, currentIndexNumber
-
 startButton.addEventListener('click', startGame)
+
+let 
 
 function startGame() {
     startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random - .5)
-    currentIndexNumber = 0
     questionContainer.classList.remove('hide')
-    setQuestion()
+    setQuestion();
 }
 
 function setQuestion() {
-    showQuestion(shuffledQuestions[currentIndexNumber])
-}
-
-function showQuestion() {
 
 }
 

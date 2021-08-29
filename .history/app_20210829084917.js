@@ -10,14 +10,10 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random - .5)
     currentIndexNumber = 0
     questionContainer.classList.remove('hide')
-    setQuestion()
+    setQuestion();
 }
 
 function setQuestion() {
-    showQuestion(shuffledQuestions[currentIndexNumber])
-}
-
-function showQuestion() {
 
 }
 

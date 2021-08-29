@@ -14,11 +14,7 @@ function startGame() {
 }
 
 function setQuestion() {
-    showQuestion(shuffledQuestions[currentIndexNumber])
-}
-
-function showQuestion() {
-
+    showQu
 }
 
 function selectAnswer() {
