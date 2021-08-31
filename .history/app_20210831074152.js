@@ -17,7 +17,6 @@ function startGame() {
 }
 
 function setQuestion() {
-    resetState()
     showQuestion(shuffledQuestions[currentIndexNumber])
 }
 
@@ -36,10 +35,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    nextButton.classList.remove('hide')
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild)
-    }
+
 }
 
 function selectAnswer() {

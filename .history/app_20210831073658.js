@@ -1,8 +1,7 @@
 const startButton = document.querySelector('#start-btn')
-const nextButton = document.querySelector('#next-btn')
 const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
-const answerButtons = document.querySelector('#answer-buttons')
+const answerButtons = document.querySelector('#answerButton')
 
 let shuffledQuestions, currentIndexNumber
 
@@ -17,7 +16,6 @@ function startGame() {
 }
 
 function setQuestion() {
-    resetState()
     showQuestion(shuffledQuestions[currentIndexNumber])
 }
 
@@ -31,15 +29,8 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct
         }
         button.addEventListener('click', selectAnswer)
-        answerButtons.appendChild(button)
+        answerButtons.ap
     })
-}
-
-function resetState() {
-    nextButton.classList.remove('hide')
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild)
-    }
 }
 
 function selectAnswer() {

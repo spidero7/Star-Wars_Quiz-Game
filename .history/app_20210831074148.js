@@ -1,5 +1,5 @@
 const startButton = document.querySelector('#start-btn')
-const nextButton = document.querySelector('#next-btn')
+const nextButton = document.querySelector('#')
 const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
@@ -17,7 +17,6 @@ function startGame() {
 }
 
 function setQuestion() {
-    resetState()
     showQuestion(shuffledQuestions[currentIndexNumber])
 }
 
@@ -36,10 +35,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    nextButton.classList.remove('hide')
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild)
-    }
+
 }
 
 function selectAnswer() {

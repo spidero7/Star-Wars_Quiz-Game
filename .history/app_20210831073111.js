@@ -1,8 +1,6 @@
 const startButton = document.querySelector('#start-btn')
-const nextButton = document.querySelector('#next-btn')
 const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
-const answerButtons = document.querySelector('#answer-buttons')
 
 let shuffledQuestions, currentIndexNumber
 
@@ -17,29 +15,12 @@ function startGame() {
 }
 
 function setQuestion() {
-    resetState()
     showQuestion(shuffledQuestions[currentIndexNumber])
 }
 
 function showQuestion(question) {
     questionElement.innerHTML = question.question
-    question.answer.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
-        if(answer.correct) {
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener('click', selectAnswer)
-        answerButtons.appendChild(button)
-    })
-}
-
-function resetState() {
-    nextButton.classList.remove('hide')
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild)
-    }
+    
 }
 
 function selectAnswer() {

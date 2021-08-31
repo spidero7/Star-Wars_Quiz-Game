@@ -17,7 +17,7 @@ function startGame() {
 }
 
 function setQuestion() {
-    resetState()
+    resetState
     showQuestion(shuffledQuestions[currentIndexNumber])
 }
 
