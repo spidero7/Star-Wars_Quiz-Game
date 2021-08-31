@@ -41,7 +41,7 @@ function showQuestion(question) {
 
 function resetState() {
     clearStatusClass(document.body)
-    nextButton.classList.add('hide')
+    nextButton.classList.remove('hide')
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
@@ -54,12 +54,7 @@ function selectAnswer(e) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (shuffledQuestions.length > currentIndexNumber + 1) {
-        nextButton.classList.remove('hide')
-    } else {
-        startButton.innerText = "Restart"
-        startButton.classList.remove('hide')
-    }
+    if (shuffledQuestions.leng)
 }
 
 function setStatusClass(element, correct) {

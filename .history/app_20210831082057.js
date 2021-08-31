@@ -7,10 +7,6 @@ const answerButtons = document.querySelector('#answer-buttons')
 let shuffledQuestions, currentIndexNumber
 
 startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', () => {
-    currentIndexNumber++
-    setQuestion()
-})
 
 function startGame() {
     startButton.classList.add('hide')
@@ -41,7 +37,7 @@ function showQuestion(question) {
 
 function resetState() {
     clearStatusClass(document.body)
-    nextButton.classList.add('hide')
+    nextButton.classList.remove('hide')
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
@@ -54,12 +50,6 @@ function selectAnswer(e) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (shuffledQuestions.length > currentIndexNumber + 1) {
-        nextButton.classList.remove('hide')
-    } else {
-        startButton.innerText = "Restart"
-        startButton.classList.remove('hide')
-    }
 }
 
 function setStatusClass(element, correct) {
@@ -90,10 +80,10 @@ const questions = [
     {
         question: 'How did Princess Leia get her title of royalty?',
         answer: [
-            { text: 'She is the adopted daughter of Bail Organa and Queen Breha', correct: true },
-            { text: 'Her sharp aim with a blaster', correct: false },
-            { text: 'A mocking nickname from Han Solo', correct: false },
-            { text: 'She is the daughter of Queen Katrina of the Geonosians', correct: false }
+            { text: 'She is the adopted daughter of Bail Organa and Queen Breha', correct: true }
+            { text: 'She is the adopted daughter of Bail Organa and Queen Breha', correct: true }
+            { text: 'She is the adopted daughter of Bail Organa and Queen Breha', correct: true }
+            { text: 'She is the adopted daughter of Bail Organa and Queen Breha', correct: true }
         ]
     }
 
