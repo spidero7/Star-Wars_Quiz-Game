@@ -36,34 +36,14 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    clearStatusClass(document.body)
     nextButton.classList.remove('hide')
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
 }
 
-function selectAnswer(e) {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
-    Array.from(answerButtons.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
-}
-
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
-    if (correct) {
-        element.classList.add('correct')
-    } else {
-        element.classList.add('wrong')
-    }
-}
-
-function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+function selectAnswer() {
+    const slectedButton = e.target
 }
 
 
@@ -78,4 +58,3 @@ const questions = [
         ]
     }
 ]
-

@@ -36,7 +36,6 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    clearStatusClass(document.body)
     nextButton.classList.remove('hide')
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
@@ -61,7 +60,7 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
+clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
