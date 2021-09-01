@@ -162,17 +162,17 @@ const questions = [
         answer: [
             { text: 'Under 55 years', correct: false},
             { text: '78 years old', correct: false},
-            { text: '200 years old on the dot', correct: false},
+            { text: '200 years old on the dot', correct: true},
             { text: 'Over 220 years', correct: true}
         ]
     },
     {
-        question: 'What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?',
+        question: 'While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?',
         answer: [
-            { text: 'Ewoks', correct: true},
-            { text: 'Wookies', correct: false},
-            { text: 'Nerf Herders', correct: false},
-            { text: 'Jawas', correct: false}
+            { text: 'Purple', correct: false},
+            { text: 'Blue', correct: false},
+            { text: 'Red', correct: true},
+            { text: 'Green', correct: false}
         ]
     }
 

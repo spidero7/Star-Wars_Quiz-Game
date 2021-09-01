@@ -144,35 +144,35 @@ const questions = [
         answer: [
             { text: 'Darth Maul', correct: false},
             { text: 'Darth Vader', correct: false},
-            { text: 'Kerok Vet', correct: false},
+            { text: 'Kerok Vet', correct: true},
             { text: 'Kylo Ren', correct: true}
         ]
     },
     {
-        question: 'What is Chewbacca’s weapon of choice?',
+        question: 'While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?',
         answer: [
-            { text: 'Blaster rifle', correct: false},
-            { text: 'Lightsaber', correct: false},
-            { text: 'Metal club', correct: false},
-            { text: 'Bowcaster', correct: true}
+            { text: 'Purple', correct: false},
+            { text: 'Blue', correct: false},
+            { text: 'Red', correct: true},
+            { text: 'Green', correct: false}
         ]
     },
     {
-        question: 'When we see him again in The Force Awakens, after many years galavanting around the galaxy with Han Solo, how old is Chewbacca?',
+        question: 'While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?',
         answer: [
-            { text: 'Under 55 years', correct: false},
-            { text: '78 years old', correct: false},
-            { text: '200 years old on the dot', correct: false},
-            { text: 'Over 220 years', correct: true}
+            { text: 'Purple', correct: false},
+            { text: 'Blue', correct: false},
+            { text: 'Red', correct: true},
+            { text: 'Green', correct: false}
         ]
     },
     {
-        question: 'What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?',
+        question: 'While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?',
         answer: [
-            { text: 'Ewoks', correct: true},
-            { text: 'Wookies', correct: false},
-            { text: 'Nerf Herders', correct: false},
-            { text: 'Jawas', correct: false}
+            { text: 'Purple', correct: false},
+            { text: 'Blue', correct: false},
+            { text: 'Red', correct: true},
+            { text: 'Green', correct: false}
         ]
     }
 

@@ -169,9 +169,9 @@ const questions = [
     {
         question: 'What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?',
         answer: [
-            { text: 'Ewoks', correct: true},
+            { text: 'Ewoks', correct: false},
             { text: 'Wookies', correct: false},
-            { text: 'Nerf Herders', correct: false},
+            { text: 'Nerf Herders', correct: true},
             { text: 'Jawas', correct: false}
         ]
     }

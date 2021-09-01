@@ -106,73 +106,7 @@ const questions = [
     {
         question: 'While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?',
         answer: [
-            { text: 'Purple', correct: false},
-            { text: 'Blue', correct: false},
-            { text: 'Red', correct: true},
-            { text: 'Green', correct: false}
-        ]
-    },
-    {
-        question: 'Who destroyed the Droid Control Ship when they accidentally activated a Naboo Fighter’s Autopilot?',
-        answer: [
-            { text: 'Biggs Darklighter', correct: false},
-            { text: 'Anakin Skywalker', correct: true},
-            { text: 'Obi Wan Kenobi', correct: false},
-            { text: 'Jar Jar Binks', correct: false}
-        ]
-    },
-    {
-        question: 'Where does Yoda live when he first trains Luke Skywalker?',
-        answer: [
-            { text: 'Tatooine', correct: false},
-            { text: 'Dagobah', correct: true},
-            { text: 'Hoth', correct: false},
-            { text: 'Coruscant', correct: false}
-        ]
-    },
-    {
-        question: 'While fighting his own father in the Cloud City, which hand does Luke Skywalker lose?',
-        answer: [
-            { text: 'Right', correct: true},
-            { text: 'Left', correct: false},
-            { text: 'Both', correct: false},
-            { text: 'Neither', correct: false}
-        ]
-    },
-    {
-        question: 'Who defeats Finn in his very first lightsaber duel?',
-        answer: [
-            { text: 'Darth Maul', correct: false},
-            { text: 'Darth Vader', correct: false},
-            { text: 'Kerok Vet', correct: false},
-            { text: 'Kylo Ren', correct: true}
-        ]
-    },
-    {
-        question: 'What is Chewbacca’s weapon of choice?',
-        answer: [
-            { text: 'Blaster rifle', correct: false},
-            { text: 'Lightsaber', correct: false},
-            { text: 'Metal club', correct: false},
-            { text: 'Bowcaster', correct: true}
-        ]
-    },
-    {
-        question: 'When we see him again in The Force Awakens, after many years galavanting around the galaxy with Han Solo, how old is Chewbacca?',
-        answer: [
-            { text: 'Under 55 years', correct: false},
-            { text: '78 years old', correct: false},
-            { text: '200 years old on the dot', correct: false},
-            { text: 'Over 220 years', correct: true}
-        ]
-    },
-    {
-        question: 'What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?',
-        answer: [
-            { text: 'Ewoks', correct: true},
-            { text: 'Wookies', correct: false},
-            { text: 'Nerf Herders', correct: false},
-            { text: 'Jawas', correct: false}
+            { text: ''}
         ]
     }
 

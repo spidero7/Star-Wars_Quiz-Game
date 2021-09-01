@@ -171,7 +171,7 @@ const questions = [
         answer: [
             { text: 'Ewoks', correct: true},
             { text: 'Wookies', correct: false},
-            { text: 'Nerf Herders', correct: false},
+            { text: 'Nerf Herders', correct: true},
             { text: 'Jawas', correct: false}
         ]
     }
