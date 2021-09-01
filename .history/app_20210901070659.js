@@ -21,13 +21,11 @@ function startGame() {
     setQuestion()
 }
 
-//Setting new question
 function setQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentIndexNumber])
 }
 
-//Creating button with text from answers
 function showQuestion(question) {
     questionElement.innerHTML = question.question
     question.answer.forEach(answer => {
@@ -42,7 +40,6 @@ function showQuestion(question) {
     })
 }
 
-//Removing unnecessary buttons
 function resetState() {
     clearStatusClass(document.body)
     nextButton.classList.add('hide')
@@ -51,7 +48,6 @@ function resetState() {
     }
 }
 
-//Selecting a button (answer) and checking how many questions left
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
@@ -67,7 +63,6 @@ function selectAnswer(e) {
     }
 }
 
-//Adding classes wrong or correct to element (body and button)
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -77,13 +72,12 @@ function setStatusClass(element, correct) {
     }
 }
 
-//Removing classes correcr and wrong from elements
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
 
-//Array of questions and answers used in Quiz
+
 const questions = [
     {
         question: 'In The Force Awakens, which character has Darth Vader’s damaged mask?',

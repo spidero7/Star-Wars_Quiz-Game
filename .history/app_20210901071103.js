@@ -67,7 +67,6 @@ function selectAnswer(e) {
     }
 }
 
-//Adding classes wrong or correct to element (body and button)
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -77,7 +76,6 @@ function setStatusClass(element, correct) {
     }
 }
 
-//Removing classes correcr and wrong from elements
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')

@@ -77,7 +77,7 @@ function setStatusClass(element, correct) {
     }
 }
 
-//Removing classes correcr and wrong from elements
+//Removing classes correcr and wrong 
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
