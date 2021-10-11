@@ -72,7 +72,7 @@ function selectAnswer(e) {
         showPoints();
         startButton.innerText = "Restart";
         startButton.classList.remove('hide');
-        clearStatusClass(document.body);
+        clearStatusClass(document)
     }
 };
 

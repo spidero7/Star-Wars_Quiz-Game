@@ -72,9 +72,8 @@ function selectAnswer(e) {
         showPoints();
         startButton.innerText = "Restart";
         startButton.classList.remove('hide');
-        clearStatusClass(document.body);
     }
-};
+}
 
 // Adding points at the end of the quiz
 function showPoints() {

@@ -69,12 +69,12 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentIndexNumber + 1) {
         nextButton.classList.remove('hide')
     } else {
-        showPoints();
+        showPoints;
         startButton.innerText = "Restart";
         startButton.classList.remove('hide');
-        clearStatusClass(document.body);
+        
     }
-};
+}
 
 // Adding points at the end of the quiz
 function showPoints() {
@@ -86,9 +86,8 @@ function showPoints() {
     startButton.addEventListener('click', function() {
         p.remove();
         points = 0;
-    });
+    })
 }
-
 //Adding classes wrong or correct to element (body and button)
 function setStatusClass(element, correct) {
     clearStatusClass(element)

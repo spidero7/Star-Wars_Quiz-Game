@@ -72,9 +72,8 @@ function selectAnswer(e) {
         showPoints();
         startButton.innerText = "Restart";
         startButton.classList.remove('hide');
-        clearStatusClass(document.body);
     }
-};
+}
 
 // Adding points at the end of the quiz
 function showPoints() {
@@ -86,7 +85,7 @@ function showPoints() {
     startButton.addEventListener('click', function() {
         p.remove();
         points = 0;
-    });
+    })
 }
 
 //Adding classes wrong or correct to element (body and button)

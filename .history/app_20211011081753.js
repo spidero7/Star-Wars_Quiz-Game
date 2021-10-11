@@ -69,26 +69,23 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentIndexNumber + 1) {
         nextButton.classList.remove('hide')
     } else {
-        showPoints();
+        questionContainer.classList.add('hide');
+        const p = document.createElement('p');
+        p.innerText = `Congrats! You earned ${points} points`;
+        controlPanel.appendChild(p);
+        
         startButton.innerText = "Restart";
         startButton.classList.remove('hide');
-        clearStatusClass(document.body);
-    }
-};
 
-// Adding points at the end of the quiz
-function showPoints() {
-    questionContainer.classList.add('hide');
-    const p = document.createElement('p');
-    p.innerText = `Congrats! You earned ${points} points`;
-    controlPanel.appendChild(p);
-    
-    startButton.addEventListener('click', function() {
-        p.remove();
-        points = 0;
-    });
+        startButton.addEventListener('click', function() {
+            p.remove();
+            points = 0;
+        })
+    }
 }
 
+// Adding points at the end of the quiz
+function show
 //Adding classes wrong or correct to element (body and button)
 function setStatusClass(element, correct) {
     clearStatusClass(element)
