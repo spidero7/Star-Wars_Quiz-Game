@@ -69,7 +69,6 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentIndexNumber + 1) {
         nextButton.classList.remove('hide')
     } else {
-        questionContainer.classList.add('hide');
         const p = document.createElement('p');
         p.innerText = `Congrats! You earned ${points} points`;
         controlPanel.appendChild(p);
@@ -114,7 +113,7 @@ const questions = [
             { text: 'A mocking nickname from Han Solo', correct: false },
             { text: 'She is the daughter of Queen Katrina of the Geonosians', correct: false }
         ]
-    },
+    }
     // {
     //     question: 'While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?',
     //     answer: [

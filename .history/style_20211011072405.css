@@ -84,3 +84,7 @@ body.wrong {
 .hide {
     display: none;
 }
+
+#score-text {
+    display: flex;
+}

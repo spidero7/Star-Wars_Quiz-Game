@@ -71,7 +71,7 @@ body.wrong {
 }
 
 #control-panel {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -84,3 +84,4 @@ body.wrong {
 .hide {
     display: none;
 }
+

@@ -69,7 +69,6 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentIndexNumber + 1) {
         nextButton.classList.remove('hide')
     } else {
-        questionContainer.classList.add('hide');
         const p = document.createElement('p');
         p.innerText = `Congrats! You earned ${points} points`;
         controlPanel.appendChild(p);
