@@ -1,9 +1,0 @@
-
-
-function startGame() {
-
-}
-
-function setQuestion() {
-    
-}

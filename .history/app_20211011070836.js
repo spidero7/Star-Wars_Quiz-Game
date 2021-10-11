@@ -60,6 +60,7 @@ function selectAnswer(e) {
 
     if (correct) {
         points = points + 1;
+        console.log(points);
     }
 
     Array.from(answerButtons.children).forEach(button => {

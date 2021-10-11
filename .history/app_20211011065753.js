@@ -5,7 +5,7 @@ const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
 
 let shuffledQuestions, currentIndexNumber;
-let points = 0;
+let points;
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -59,7 +59,7 @@ function selectAnswer(e) {
     setStatusClass(document.body, correct)
 
     if (correct) {
-        points = points + 1;
+        
     }
 
     Array.from(answerButtons.children).forEach(button => {

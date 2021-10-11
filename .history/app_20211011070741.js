@@ -58,9 +58,7 @@ function selectAnswer(e) {
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
 
-    if (correct) {
-        points = points + 1;
-    }
+
 
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)

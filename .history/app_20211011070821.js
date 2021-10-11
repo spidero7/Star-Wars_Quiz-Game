@@ -59,7 +59,7 @@ function selectAnswer(e) {
     setStatusClass(document.body, correct)
 
     if (correct) {
-        points = points + 1;
+        points
     }
 
     Array.from(answerButtons.children).forEach(button => {
