@@ -50,17 +50,14 @@ function showQuestion(question) {
 function countQuestionsInArray() {
     const count = questions.filter(item => item.question).length
     
-    const heading = document.createElement('h3');
+    const heading = document.createElement('heading');
     heading.classList.add('count-question');
     heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
 
     mainContainer.appendChild(heading);
-    
-    nextButton.addEventListener('click', function() {
-        heading.remove();
-    });
-}
+    heading.
+};
 
 //Removing unnecessary buttons
 function resetState() {
