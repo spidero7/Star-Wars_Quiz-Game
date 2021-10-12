@@ -51,11 +51,10 @@ function countQuestionsInArray() {
     const count = questions.filter(item => item.question).length
     
     const heading = document.createElement('heading');
-    heading.classList.add('count-question');
     heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
 
-    mainContainer.appendChild(heading);
+    mainContainer.appendChild(heading)
 };
 
 //Removing unnecessary buttons

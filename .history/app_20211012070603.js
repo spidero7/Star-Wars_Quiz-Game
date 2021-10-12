@@ -4,7 +4,6 @@ const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
 const controlPanel = document.querySelector('#control-panel');
-const mainContainer = document.querySelector('.container');
 
 let shuffledQuestions, currentIndexNumber;
 let points = 0;
@@ -51,11 +50,8 @@ function countQuestionsInArray() {
     const count = questions.filter(item => item.question).length
     
     const heading = document.createElement('heading');
-    heading.classList.add('count-question');
     heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
-
-    mainContainer.appendChild(heading);
 };
 
 //Removing unnecessary buttons
@@ -92,22 +88,7 @@ function selectAnswer(e) {
 
 // Adding points at the end of the quiz
 function showPoints() {
-    // questionContainer.classList.add('hide');
-    const p = document.createElement('p');
-    p.classList.add('end-message');
-
-    if (points > 5 ) {
-        p.innerText = `Congrats! You passed the Quiz and earned ${points}/10 points.`;
-    } else {
-        p.innerText = `Sorry, you earned ${points}/10 and failed. Dark Side won.. 
-        Please try again.`
-    }
-    controlPanel.appendChild(p);
     
-    startButton.addEventListener('click', function() {
-        p.remove();
-        points = 0;
-    });
 }
 
 //Adding classes wrong or correct to element (body and button)

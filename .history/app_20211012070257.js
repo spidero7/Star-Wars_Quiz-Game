@@ -4,7 +4,6 @@ const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
 const controlPanel = document.querySelector('#control-panel');
-const mainContainer = document.querySelector('.container');
 
 let shuffledQuestions, currentIndexNumber;
 let points = 0;
@@ -43,20 +42,9 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer)
         answerButtons.appendChild(button)
     })
-    countQuestionsInArray();
+    countQuestionsInArray()
 }
 
-// dynamic counting all question (objects) in the array
-function countQuestionsInArray() {
-    const count = questions.filter(item => item.question).length
-    
-    const heading = document.createElement('heading');
-    heading.classList.add('count-question');
-    heading.innerText = `${currentIndexNumber + 1}/${count}`;
-    console.log(heading);
-
-    mainContainer.appendChild(heading);
-};
 
 //Removing unnecessary buttons
 function resetState() {
@@ -72,11 +60,11 @@ function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
-
+    
     if (correct) {
         points = points + 1;
     }
-
+    
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -95,7 +83,7 @@ function showPoints() {
     // questionContainer.classList.add('hide');
     const p = document.createElement('p');
     p.classList.add('end-message');
-
+    
     if (points > 5 ) {
         p.innerText = `Congrats! You passed the Quiz and earned ${points}/10 points.`;
     } else {
@@ -103,6 +91,14 @@ function showPoints() {
         Please try again.`
     }
     controlPanel.appendChild(p);
+    // dynamic counting all question (objects) in the array
+    function countQuestionsInArray() {
+        const count = questions.filter(item => item.question).length
+        
+        const heading = document.createElement('heading');
+        heading.innerText = `${currentIndexNumber + 1}/${count}`;
+        console.log(heading);
+    };
     
     startButton.addEventListener('click', function() {
         p.remove();

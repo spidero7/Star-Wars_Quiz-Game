@@ -55,7 +55,7 @@ function countQuestionsInArray() {
     heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
 
-    mainContainer.appendChild(heading);
+    mainContainer.append(heading);
 };
 
 //Removing unnecessary buttons

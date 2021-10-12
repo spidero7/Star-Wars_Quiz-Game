@@ -91,6 +91,5 @@ body.wrong {
 }
 
 .count-question {
-    display: grid;
-    text-align: center;
+    display: flex;
 }

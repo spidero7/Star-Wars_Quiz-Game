@@ -4,7 +4,6 @@ const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
 const controlPanel = document.querySelector('#control-panel');
-const mainContainer = document.querySelector('.container');
 
 let shuffledQuestions, currentIndexNumber;
 let points = 0;
@@ -43,20 +42,13 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer)
         answerButtons.appendChild(button)
     })
-    countQuestionsInArray();
-}
-
-// dynamic counting all question (objects) in the array
-function countQuestionsInArray() {
+    // dynamic counting all question (objects) in the array
     const count = questions.filter(item => item.question).length
-    
+
     const heading = document.createElement('heading');
-    heading.classList.add('count-question');
     heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
-
-    mainContainer.appendChild(heading);
-};
+}
 
 //Removing unnecessary buttons
 function resetState() {

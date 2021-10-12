@@ -4,7 +4,7 @@ const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
 const controlPanel = document.querySelector('#control-panel');
-const mainContainer = document.querySelector('.container');
+const mainContainer = document.querySelector('');
 
 let shuffledQuestions, currentIndexNumber;
 let points = 0;
@@ -51,11 +51,10 @@ function countQuestionsInArray() {
     const count = questions.filter(item => item.question).length
     
     const heading = document.createElement('heading');
-    heading.classList.add('count-question');
     heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
 
-    mainContainer.appendChild(heading);
+
 };
 
 //Removing unnecessary buttons

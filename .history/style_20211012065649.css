@@ -87,10 +87,5 @@ body.wrong {
 
 .end-message {
     margin: 25px auto;
-    text-align: center;
-}
-
-.count-question {
-    display: grid;
-    text-align: center;
+    align-items: center;
 }

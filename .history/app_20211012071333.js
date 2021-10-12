@@ -4,7 +4,7 @@ const questionContainer = document.querySelector('#question-container')
 const questionElement = document.querySelector('#question')
 const answerButtons = document.querySelector('#answer-buttons')
 const controlPanel = document.querySelector('#control-panel');
-const mainContainer = document.querySelector('.container');
+const mainContainer = document.querySelector('.main-container');
 
 let shuffledQuestions, currentIndexNumber;
 let points = 0;
