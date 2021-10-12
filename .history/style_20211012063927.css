@@ -86,5 +86,6 @@ body.wrong {
 }
 
 .end-message {
-    margin: 25px auto;
+    text-align: center;
+    width: 70;
 }
