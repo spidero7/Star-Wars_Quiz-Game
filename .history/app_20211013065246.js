@@ -51,7 +51,7 @@ function countQuestionsInArray() {
     const count = questions.filter(item => item.question).length;
     const heading = document.createElement('h3');
     heading.classList.add('count-question');
-    heading.innerText = `Question: ${currentIndexNumber + 1}/${count}`;
+    heading.innerText = `${currentIndexNumber + 1}/${count}`;
     console.log(heading);
 
     mainContainer.appendChild(heading);
@@ -101,16 +101,12 @@ function selectAnswer(e) {
 function showPoints() {
     // questionContainer.classList.add('hide');
     const p = document.createElement('p');
-    const count = questions.filter(item => item.question).length;
     p.classList.add('end-message');
 
-    const halfOfTheQuestions = Math.ceil(count / 2);
-    console.log(halfOfTheQuestions);
-
-    if (points >= halfOfTheQuestions ) {
-        p.innerText = `Congrats! You passed the Quiz and earned ${points}/${count} points.`;
+    if (points > 5 ) {
+        p.innerText = `Congrats! You passed the Quiz and earned ${points}/10 points.`;
     } else {
-        p.innerText = `Sorry, you earned ${points}/${count} and failed. Dark Side won.. 
+        p.innerText = `Sorry, you earned ${points}/10 and failed. Dark Side won.. 
         Please try again.`
     }
     controlPanel.appendChild(p);
@@ -166,69 +162,69 @@ const questions = [
             { text: 'Green', correct: false}
         ]
     },
-    {
-        question: 'Who destroyed the Droid Control Ship when they accidentally activated a Naboo Fighter’s Autopilot?',
-        answer: [
-            { text: 'Biggs Darklighter', correct: false},
-            { text: 'Anakin Skywalker', correct: true},
-            { text: 'Obi Wan Kenobi', correct: false},
-            { text: 'Jar Jar Binks', correct: false}
-        ]
-    },
-    {
-        question: 'Where does Yoda live when he first trains Luke Skywalker?',
-        answer: [
-            { text: 'Tatooine', correct: false},
-            { text: 'Dagobah', correct: true},
-            { text: 'Hoth', correct: false},
-            { text: 'Coruscant', correct: false}
-        ]
-    },
-    {
-        question: 'While fighting his own father in the Cloud City, which hand does Luke Skywalker lose?',
-        answer: [
-            { text: 'Right', correct: true},
-            { text: 'Left', correct: false},
-            { text: 'Both', correct: false},
-            { text: 'Neither', correct: false}
-        ]
-    },
-    {
-        question: 'Who defeats Finn in his very first lightsaber duel?',
-        answer: [
-            { text: 'Darth Maul', correct: false},
-            { text: 'Darth Vader', correct: false},
-            { text: 'Kerok Vet', correct: false},
-            { text: 'Kylo Ren', correct: true}
-        ]
-    },
-    {
-        question: 'What is Chewbacca’s weapon of choice?',
-        answer: [
-            { text: 'Blaster rifle', correct: false},
-            { text: 'Lightsaber', correct: false},
-            { text: 'Metal club', correct: false},
-            { text: 'Bowcaster', correct: true}
-        ]
-    },
-    {
-        question: 'When we see him again in The Force Awakens, after many years galavanting around the galaxy with Han Solo, how old is Chewbacca?',
-        answer: [
-            { text: 'Under 55 years', correct: false},
-            { text: '78 years old', correct: false},
-            { text: '200 years old on the dot', correct: false},
-            { text: 'Over 220 years', correct: true}
-        ]
-    },
-    {
-        question: 'What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?',
-        answer: [
-            { text: 'Ewoks', correct: true},
-            { text: 'Wookies', correct: false},
-            { text: 'Nerf Herders', correct: false},
-            { text: 'Jawas', correct: false}
-        ]
-    },
+    // {
+    //     question: 'Who destroyed the Droid Control Ship when they accidentally activated a Naboo Fighter’s Autopilot?',
+    //     answer: [
+    //         { text: 'Biggs Darklighter', correct: false},
+    //         { text: 'Anakin Skywalker', correct: true},
+    //         { text: 'Obi Wan Kenobi', correct: false},
+    //         { text: 'Jar Jar Binks', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: 'Where does Yoda live when he first trains Luke Skywalker?',
+    //     answer: [
+    //         { text: 'Tatooine', correct: false},
+    //         { text: 'Dagobah', correct: true},
+    //         { text: 'Hoth', correct: false},
+    //         { text: 'Coruscant', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: 'While fighting his own father in the Cloud City, which hand does Luke Skywalker lose?',
+    //     answer: [
+    //         { text: 'Right', correct: true},
+    //         { text: 'Left', correct: false},
+    //         { text: 'Both', correct: false},
+    //         { text: 'Neither', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: 'Who defeats Finn in his very first lightsaber duel?',
+    //     answer: [
+    //         { text: 'Darth Maul', correct: false},
+    //         { text: 'Darth Vader', correct: false},
+    //         { text: 'Kerok Vet', correct: false},
+    //         { text: 'Kylo Ren', correct: true}
+    //     ]
+    // },
+    // {
+    //     question: 'What is Chewbacca’s weapon of choice?',
+    //     answer: [
+    //         { text: 'Blaster rifle', correct: false},
+    //         { text: 'Lightsaber', correct: false},
+    //         { text: 'Metal club', correct: false},
+    //         { text: 'Bowcaster', correct: true}
+    //     ]
+    // },
+    // {
+    //     question: 'When we see him again in The Force Awakens, after many years galavanting around the galaxy with Han Solo, how old is Chewbacca?',
+    //     answer: [
+    //         { text: 'Under 55 years', correct: false},
+    //         { text: '78 years old', correct: false},
+    //         { text: '200 years old on the dot', correct: false},
+    //         { text: 'Over 220 years', correct: true}
+    //     ]
+    // },
+    // {
+    //     question: 'What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?',
+    //     answer: [
+    //         { text: 'Ewoks', correct: true},
+    //         { text: 'Wookies', correct: false},
+    //         { text: 'Nerf Herders', correct: false},
+    //         { text: 'Jawas', correct: false}
+    //     ]
+    // },
 
 ]
 
